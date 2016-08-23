@@ -1,6 +1,6 @@
 import React from 'react'
 
-class Card extends React.Component {
+var Card = React.createClass({
 
   render () {
     let styles = {
@@ -25,6 +25,6 @@ class Card extends React.Component {
       </div>
     )
   }
-}
+})
 
 module.exports = Card
