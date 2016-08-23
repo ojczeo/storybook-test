@@ -1,6 +1,6 @@
 import React from 'react'
 
-var MessageComponent = React.createClass({
+var Message = React.createClass({
   render: function () {
     return (
       <div>{this.props.message}</div>
@@ -8,4 +8,4 @@ var MessageComponent = React.createClass({
   }
 })
 
-module.exports = MessageComponent
+module.exports = Message

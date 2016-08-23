@@ -3,23 +3,23 @@ import List from './list'
 
 var FilteredList = React.createClass({
   filterList: function (e) {
-    var updatedList = this.state.initialItems;;
-    updatedList = updatedList.filter(function(item){
+    var updatedList = this.state.initialItems
+    updatedList = updatedList.filter(function (item) {
       return item.toLowerCase().search(e.target.value.toLowerCase()) !== -1
     })
     this.setState({items: updatedList})
   },
 
-  getInitialState : function() {
+  getInitialState: function () {
     return {
-      initialItems: this.props.items.map(function(item){
+      initialItems: this.props.items.map(function (item) {
         return item.toString()
       }),
       items: []
     }
   },
 
-  componentWillMount: function() {
+  componentWillMount: function () {
       this.setState({items: this.props.items})
   },
 

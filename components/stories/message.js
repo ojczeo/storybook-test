@@ -1,5 +1,6 @@
 import React from 'react'
 import Message from '../message'
+import CustomMessage from '../customMessage'
 import { storiesOf, action } from '@kadira/storybook'
 
 storiesOf('Message', module)
@@ -7,5 +8,5 @@ storiesOf('Message', module)
     <Message message='A new message' />
   ))
   .add('Another message', () => (
-    <Message message='Another message' />
+    <CustomMessage message='Custom message' />
   ))
