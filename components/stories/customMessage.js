@@ -1,7 +1,5 @@
 import React from 'react'
-import Message from '../message'
 import CustomMessage from '../customMessage'
-import ConfirmMessage from '../confirmMessage'
 import { storiesOf, action } from '@kadira/storybook'
 
 storiesOf('Message', module)
@@ -9,8 +7,5 @@ storiesOf('Message', module)
     <Message message='A new message' />
   ))
   .add('Another message', () => (
-    <CustomMessage message='Custom message' />
-  ))
-  .add('Confirm message', () => (
-    <ConfirmMessage message='Confirm message' />
+    <CustomMessage message='Another message' />
   ))
